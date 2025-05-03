@@ -4,7 +4,7 @@
 //! plus a couple of builders and associated traits.
 //! To build any shape, start with [`ShapeBuilder`].
 
-use lyon_algorithms::path::{builder::WithSvg, traits::Build, BuilderImpl};
+use lyon_algorithms::path::{BuilderImpl, builder::WithSvg, traits::Build};
 use lyon_tessellation::path::path::Builder;
 
 use crate::{
@@ -23,7 +23,7 @@ use crate::{
 /// use bevy_prototype_lyon::geometry::Geometry;
 /// use lyon_tessellation::{
 ///     math::{Box2D, Point, Size},
-///     path::{path::Builder, traits::PathBuilder, Path, Winding},
+///     path::{Path, Winding, path::Builder, traits::PathBuilder},
 /// };
 ///
 /// // First, create a struct to hold the shape features:
